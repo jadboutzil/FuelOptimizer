@@ -26,7 +26,7 @@ def geocode_address(address, gmaps_client):
         return (lat_lng['lat'], lat_lng['lng'])
     return None
 def get_public_transportation_info(start, end):
-    gmaps = googlemaps.Client(key='AIzaSyDrCZclubi3K3N8994ZQYL8xjrCzhGhT8I')
+    gmaps = googlemaps.Client(key=gmaps_key)
 
     # Ensure start and end are strings
     start = str(start)
